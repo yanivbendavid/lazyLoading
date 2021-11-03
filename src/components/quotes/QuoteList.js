@@ -6,9 +6,9 @@ import { useHistory, useLocation } from "react-router";
 const sortQuotes = (q, asc) => {
   const sortedQuotes = q.sort((a, b) => {
     if (asc) {
-      return a.text > b.text ? 1 : -1;
+      return a.id > b.id ? 1 : -1;
     } else {
-      return a.text < b.text ? 1 : -1;
+      return a.id < b.id ? 1 : -1;
     }
   });
   return sortedQuotes;
